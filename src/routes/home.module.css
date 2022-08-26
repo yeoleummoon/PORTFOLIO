@@ -1,0 +1,143 @@
+body {
+  font-family:'Noto Sans',sans-serif;
+}
+
+.wrap { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.box {
+  height: 100vh;
+  width: 500px;
+}
+
+.me_box {
+  width: 400px;
+  height: 600px;
+  margin-left: 100px;
+  text-align: center;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.me_box img {
+  width: 260px;
+  height: 260px;
+  margin: 100px auto 60px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.me_box .name {
+  font-size: 30px;
+  margin-top: -20px;
+  font-weight: normal;
+}
+.me_box .bar {
+  width: 50px;
+  height: 2px;
+  margin: 30px auto;
+  background-color: #999;
+}
+.me_box .developer {
+  font-size: 24px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+/* me_box */
+.info::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 35%;
+  height: 100%;
+  background-color: lavender;
+  z-index: -1;
+}
+
+.info {
+  padding-left: 80px;
+}
+
+@keyframes shine {
+  0% {
+  background-position: 0px;
+  }
+  100% {
+  background-position: 280px;
+  }
+}
+.iam {
+  font-size: 25px;
+  text-align: center;
+  word-spacing: -1px;
+  background: linear-gradient(to right, #2d2d2d 0%, #c2c2f8 6%, #2d2d2d 12%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite alternate linear;
+  animation-fill-mode: forwards;
+}
+
+.info .button {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.info button {
+  width: 120px;
+  height: 38px;
+  margin-right: 10px;
+  color: white;
+  background-color: mediumpurple;
+  font-size: 14px;
+  line-height: 35px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 1px solid;
+}
+.info button:hover {
+  box-shadow: 2px 2px 5px inset rgba(0,0,0,0.3);
+}
+
+.info .story {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 18px;
+}
+.info p {
+  margin: 10px 0;
+}
+
+/* info */
+
+
+@media screen and (max-width: 1090px) {
+  .me_box {
+    width: 300px;
+  }
+  .me_box img {
+    width: 200px;
+    height: 200px;
+  }
+  .info {
+    padding-left: 60px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .info {
+    margin-right: 10px ;
+  }
+  .me_box{
+    margin-left: 10px;
+  }
+}
