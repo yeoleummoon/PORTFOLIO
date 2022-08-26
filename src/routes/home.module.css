@@ -110,8 +110,8 @@ body {
 }
 
 .info .story {
-  margin-top: 50px;
-  text-align: center;
+  margin-top: 70px;
+  text-align: left;
   font-size: 18px;
 }
 .info p {
@@ -120,6 +120,8 @@ body {
 /* info */
 
 .contact  {
+  display: flex;
+  justify-content: center;
   margin-top: 40px;
 }
 
