@@ -23,7 +23,10 @@ const Home = (props) => {
             <div className={styles.story}>
             <p>Frontend를 깊이 있게 다져나가고자 하는 주니어 개발자입니다.</p>
             <p>그렇게 다양한 경험을 쌓았으며, 매번 새로운 계획과 도전은 큰 자극제가 되어 주었습니다.</p>
-            <p>스스로에게 새로운 과제를 내어주며 계속해서발전해 나갈 기회를 만들어주고자 합니다.</p>
+            <p>스스로에게 새로운 과제를 내어주며 계속해서 발전해 나갈 기회를 만들어주고자 합니다.</p>
+            <div className={styles.contact}>
+              <button><a href="mailto:yoruminn@naver.com"><img src="../../images/icon_mail.png" alt="mail" /></a></button>
+            </div>
             </div>
       </section>      
     </div>
