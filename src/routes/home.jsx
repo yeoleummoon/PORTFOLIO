@@ -15,7 +15,6 @@ const Home = (props) => {
       <section className={styles.info}>
           <p className={styles.iam}>열매를 열리게 하는 개발자로</p>
             <div className={styles.button}>
-              <button className={styles.resume}>RESUME</button>
               <button className={styles.project} onClick={() => {
                 navigate('/project');
               }}>PROJECT</button>
